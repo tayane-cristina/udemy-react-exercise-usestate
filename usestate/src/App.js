@@ -5,7 +5,6 @@ import ManagerData from './components/ManagerData';
 import RenderList from './components/RenderList';
 import ShowUserName from './components/ShowUserName';
 import Content from './components/Content';
-import ShowMessage from './components/ShowMessage';
 
 function App() {
   const songs = [
@@ -14,10 +13,6 @@ function App() {
     {title: "Volte a sonhar", category: "religiosa", launch: 2016, favority: false,},
     {title: "Deixa o céu descer", category: "Worship", launch: 2016, favority: false,},
   ]
-
-  const message = () => {
-    console.log('Parabéns! Você conseguiu renderizar a menssagem.')
-  }
 
   return (
     <div className="App">
@@ -36,8 +31,6 @@ function App() {
       <Content>
         <p>Esté é um código aleatorio que está sendo passado via children</p>
       </Content>
-
-      <ShowMessage myFunction={message}/>
     </div>
   );
 }
